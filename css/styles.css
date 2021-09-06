@@ -1,0 +1,17 @@
+.fa-facebook-f, .fa-twitter {
+  padding: 0 8px;
+  color: white;
+  align-self: center;
+}
+
+.nav-link {
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.semi-center {
+  padding-right: 5%;
+}
