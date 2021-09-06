@@ -54,13 +54,11 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-To Microverse and their support team.
+To everyone in Microverse.
 
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
-
-Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
 Original design idea by [Cindy Shin](https://www.behance.net/adagio07) in Behance is licensed under a
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
