@@ -3,20 +3,23 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/da325e8256.js" crossorigin="anonymous"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="css/styles.css">
     <title>Conference</title>
   </head>
   <body>
-    <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark py-1">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark py-1">
       <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbars">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse navbars" id="collapse_target1">
-        <ul class="navbar-nav ms-auto semi-center">
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-twitter"></i>
+        <ul class="navbar-nav ms-auto pe-5">
+          <div>
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               English
@@ -38,34 +41,44 @@
     </nav>
     <nav class="navbar navbar-expand-sm navbar-light bg-light py-3">
       <div class="collapse navbar-collapse navbars" id="collapse_target2">
-        <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link 5</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link 6</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link 7</a>
-            </li>
+        <a class="navbar-brand ps-5" href="#"><img src="imgs/IJS_London20_Website_Logo_Header_53632_v1.png" alt="logo"></a>
+        <ul class="navbar-nav ms-auto pe-5 align-items-center">
+          <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Program</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Join</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sponsor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li>
+          <li class="nav-item emphasis">
+            <a class="nav-link orange" href="#">Campaign</a>
+          </li>
         </ul>
       </div>
-  </nav>
-  <section class="container">
-    <p>Sriracha biodiesel taxidermy organic post-ironic, Intelligentsia salvia mustache 90's code editing brunch. Butcher polaroid VHS art party, hashtag Brooklyn deep v PBR narwhal sustainable mixtape 
-    swag wolf squid tote bag. Tote bag cronut semiotics, raw denim deep v taxidermy messenger bag. Tofu YOLO Etsy, direct trade 
-    ethical Odd Future jean shorts paleo. Forage Shoreditch tousled aesthetic irony, street art organic Bushwick artisan cliche semiotics ugh 
-    synth chillwave meditation. Shabby chic lomo plaid vinyl chambray Vice. Vice sustainable cardigan, Williamsburg master cleanse hella DIY 90's blog.</p> 
+    </nav>
+    <header class="page-header-ui bg-white">
+      <div class="pt-5">
+        <div class="container px-5">
+          <div class="row gx-5 align-items-center">
+            <div class="col-lg-6">
+              <h1 class="page-header-ui-title">GLOBAL CONFERENCE SERIES FOR FULLSTACK JS DEVELOPMENT</h1>
+              <p class="page-header-ui-text mb-5">The JavaScript world is constantly evolving and there’s something new to learn every day. We at International JavaScript Conference want you to be a part of that change and stay on top of the latest trends.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
 
-    <p>Ethical Kickstarter PBR 
-    asymmetrical lo-fi. Dreamcatcher street art Carles, stumptown gluten-free Kickstarter artisan 
-    Wes Anderson wolf pug. Godard sustainable you probably haven't heard of them, vegan farm-to-table Williamsburg slow-carb 
-    readymade disrupt deep v. Meggings seitan Wes Anderson semiotics, cliche American Apparel whatever. Helvetica cray plaid, vegan brunch Banksy 
-    leggings +1 direct trade. Wayfarers codeply PBR selfies. Banh mi McSweeney's Shoreditch selfies, 
-    forage fingerstache food truck occupy YOLO Pitchfork fixie iPhone fanny pack art party Portland.</p>
-    </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script> -->
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>
