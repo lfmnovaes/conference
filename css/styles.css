@@ -38,16 +38,66 @@ body {
 
 .page-header-ui {
   position: relative;
-  padding: 8rem 0;
+  padding: 10vmax 0;
+  background: center / cover no-repeat url("/imgs/IJS20_Global_Header_Gray.jpg");
 }
 
 .page-header-ui-title {
   font-family: 'COCOGOOSE', sans-serif;
-  font-size: 4rem;
+  font-weight: bold;
+  font-size: 5.5vw;
+  background: center / cover no-repeat url("/imgs/background@2x.jpg");
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .page-header-ui-text {
-  font-size: 1rem;
+  font-size: 1.2vmax;
+  line-height: 30px;
+  background-color: #f7f7f7;
+  border: 3px solid #fff;
+}
+
+.page-header-ui-date {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.page-header-ui-location {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.red-line {
+  background-color: #ec5242;
+  border: 1px solid #ec5242;
+  width: 50px;
+  margin-top: 10px;
+  opacity: 100;
+}
+
+.ui-pattern {
+  background-color: #272a31;
+  background-image: linear-gradient(
+45deg,rgba(0,0,0,.10) 25%,transparent 0),linear-gradient(
+-45deg,rgba(0,0,0,.10) 25%,transparent 0),linear-gradient(
+45deg,transparent 75%,rgba(0,0,0,.10) 0),linear-gradient(
+-45deg,transparent 75%,rgba(0,0,0,.10) 0);
+  background-size: 24px 24px;
+  background-position: 0 0,0 12px,12px -12px,-12px 0;
+}
+
+h4 {
+  text-decoration: underline;
+}
+
+.gray-bg {
+  background-color: #414246;
 }
 
 /* between 576px and 768px */
@@ -61,16 +111,20 @@ body {
     margin: inherit;
   }
 
+  .pe-5 {
+    padding-right: 1rem !important;
+  }
+
+  .ps-5 {
+    padding-left: 1rem !important;
+  }
+
   .emphasis {
     padding: 5px;
   }
 
   .page-header-ui {
-    padding: 4rem 0;
-  }
-  
-  .page-header-ui-title {
-    font-size: 3rem;
+    padding: 4vh 0;
   }
 }
 
@@ -96,10 +150,6 @@ body {
   }
 
   .page-header-ui {
-    padding: 1rem 0;
-  }
-
-  .page-header-ui-title {
-    font-size: 2rem;
+    padding: 2vh 0;
   }
 }
