@@ -1,12 +1,17 @@
-/*
-font-family: 'Lato', sans-serif;
-font-family: 'COCOGOOSE', sans-serif;
-*/
-
 @font-face {
   font-family: 'COCOGOOSE';
-  src: url(../fonts/CocogooseRegular.ttf);
+  src: url(../fonts/COCOGOOSE.ttf);
 }
+
+/* @font-face {
+  font-family: "COCOGOOSE";
+  src: url("//db.onlinewebfonts.com/t/d14035f6b1afeabafbee4abb2ebf0fc6.eot");
+  src: url("//db.onlinewebfonts.com/t/d14035f6b1afeabafbee4abb2ebf0fc6.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/d14035f6b1afeabafbee4abb2ebf0fc6.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/d14035f6b1afeabafbee4abb2ebf0fc6.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/d14035f6b1afeabafbee4abb2ebf0fc6.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/d14035f6b1afeabafbee4abb2ebf0fc6.svg#COCOGOOSE") format("svg");
+} */
 
 @font-face {
   font-family: 'Lato';
@@ -44,7 +49,7 @@ body {
 }
 
 .page-header-ui-title {
-  font-family: 'COCOGOOSE', sans-serif;
+  font-family: 'COCOGOOSE';
   font-weight: bold;
   font-size: calc(100% + 4.2vw);
   background: center / cover no-repeat url("/imgs/background@2x.jpg");
@@ -60,6 +65,7 @@ body {
 }
 
 .page-header-ui-date {
+  font-family: 'COCOGOOSE';
   font-size: calc(100% + 2.1vw);
   font-weight: bold;
 }
@@ -108,20 +114,8 @@ body {
   border: 2px solid white;
 }
 
-.speaker-bg {
-  background-color: #fff;
-  opacity: 1;
-  background-image: repeating-linear-gradient(45deg, #d3d3d3 25%, transparent 25%, transparent 75%, #d3d3d3 75%, #d3d3d3), repeating-linear-gradient(45deg, #d3d3d3 25%, #fff 25%, #fff 75%, #d3d3d3 75%, #d3d3d3);
-  background-position: 0 0, 6px 6px;
-  background-size: 12px 12px;
-  clip-path: polygon(50% 20%, 50% 25%, 85% 25%, 85% 95%, 25% 95%, 25% 50%, 20% 50%, 20% 20%);
-}
-
 .speaker {
-  position: relative;
-  left: 10px;
-  top: 40px;
-  clip-path: inset(5px 20px 50px 30px);
+  clip-path: circle(50%);
 }
 
 .speaker-name {
@@ -152,7 +146,7 @@ h4 {
   background-color: #414246;
 }
 
-.logo {
+.invert {
   filter: invert(100%);
 }
 
@@ -160,13 +154,16 @@ h4 {
   filter: grayscale(100%);
 }
 
+.img-responsv {
+  max-width: 12vw;
+}
+
 .logo-footer {
-  max-width: 14vw;
   filter: invert(100%) grayscale(100%);
 }
 
 .text-footer {
-  font-size: 2vw;
+  font-size: calc(100% + 0.5vw);
 }
 
 /* between 576px and 768px */
@@ -203,6 +200,10 @@ h4 {
   .page-header-ui {
     padding: 4vh 0;
   }
+
+  .img-responsv {
+    max-width: 16vw;
+  }
 }
 
 @media only screen and (max-width: 575px) {
@@ -230,11 +231,19 @@ h4 {
     padding: 0 !important;
   }
 
+  .mb-5 {
+    margin-bottom: 2rem !important;
+  }
+
   .emphasis {
     padding: 4px;
   }
 
   .page-header-ui {
     padding: 2vh 0;
+  }
+
+  .img-responsv {
+    max-width: 30vw;
   }
 }
