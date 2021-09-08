@@ -21,7 +21,8 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-.fa-facebook-f, .fa-twitter {
+.fa-facebook-f,
+.fa-twitter {
   padding: 0 8px;
   color: white;
   align-self: center;
@@ -45,21 +46,21 @@ body {
 .page-header-ui-title {
   font-family: 'COCOGOOSE', sans-serif;
   font-weight: bold;
-  font-size: calc(100% + 5vw);
+  font-size: calc(100% + 4.2vw);
   background: center / cover no-repeat url("/imgs/background@2x.jpg");
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .page-header-ui-text {
-  font-size: calc(100% + 0.2vw);
+  font-size: calc(100% + 0.1vw);
   line-height: calc(100% + 1.5vw);
   background-color: #f7f7f7;
   border: 3px solid #fff;
 }
 
 .page-header-ui-date {
-  font-size: 3.5vw;
+  font-size: calc(100% + 2.1vw);
   font-weight: bold;
 }
 
@@ -83,13 +84,13 @@ body {
 
 .ui-pattern {
   background-color: #272a31;
-  background-image: linear-gradient(
-45deg,rgba(0,0,0,.10) 25%,transparent 0),linear-gradient(
--45deg,rgba(0,0,0,.10) 25%,transparent 0),linear-gradient(
-45deg,transparent 75%,rgba(0,0,0,.10) 0),linear-gradient(
--45deg,transparent 75%,rgba(0,0,0,.10) 0);
+  background-image:
+    linear-gradient(45deg, rgba(0, 0, 0, 0.1) 25%, transparent 0),
+    linear-gradient(-45deg, rgba(0, 0, 0, 0.1) 25%, transparent 0),
+    linear-gradient(45deg, transparent 75%, rgba(0, 0, 0, 0.1) 0),
+    linear-gradient(-45deg, transparent 75%, rgba(0, 0, 0, 0.1) 0);
   background-size: 24px 24px;
-  background-position: 0 0,0 12px,12px -12px,-12px 0;
+  background-position: 0 0, 0 12px, 12px -12px, -12px 0;
 }
 
 .program-icon {
@@ -99,7 +100,7 @@ body {
 
 .program-card {
   max-width: 30vh;
-  background-color: rgba(255,255,255,0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   border: 2px solid transparent;
 }
 
@@ -108,11 +109,39 @@ body {
 }
 
 .speaker-bg {
-  background-color: #ffffff;
+  background-color: #fff;
   opacity: 1;
-  background-image:  repeating-linear-gradient(45deg, #d3d3d3 25%, transparent 25%, transparent 75%, #d3d3d3 75%, #d3d3d3), repeating-linear-gradient(45deg, #d3d3d3 25%, #ffffff 25%, #ffffff 75%, #d3d3d3 75%, #d3d3d3);
+  background-image: repeating-linear-gradient(45deg, #d3d3d3 25%, transparent 25%, transparent 75%, #d3d3d3 75%, #d3d3d3), repeating-linear-gradient(45deg, #d3d3d3 25%, #fff 25%, #fff 75%, #d3d3d3 75%, #d3d3d3);
   background-position: 0 0, 6px 6px;
   background-size: 12px 12px;
+  clip-path: polygon(50% 20%, 50% 25%, 85% 25%, 85% 95%, 25% 95%, 25% 50%, 20% 50%, 20% 20%);
+}
+
+.speaker {
+  position: relative;
+  left: 10px;
+  top: 40px;
+  clip-path: inset(5px 20px 50px 30px);
+}
+
+.speaker-name {
+  font-size: calc(100% + 0.5vw);
+  font-weight: bold;
+}
+
+.speaker-title {
+  font-size: calc(80% + 0.1vw);
+  font-style: italic;
+  color: #ec5242;
+}
+
+.speaker-hr {
+  width: 20px;
+  margin: 5px 0;
+}
+
+.speaker-desc {
+  font-size: calc(90% + 0.1vw);
 }
 
 h4 {
@@ -141,7 +170,7 @@ h4 {
 }
 
 /* between 576px and 768px */
-@media only screen and (min-width:576px) and (max-width:768px){
+@media only screen and (min-width: 576px) and (max-width: 768px) {
   .navbar-brand {
     padding: 0 0 0 2%;
     margin: 0;
@@ -176,11 +205,11 @@ h4 {
   }
 }
 
-@media only screen and (max-width:575px) {
+@media only screen and (max-width: 575px) {
   .navbar-nav {
     align-items: center;
   }
-  
+
   .navbar-brand {
     display: none;
   }
