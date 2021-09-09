@@ -37,13 +37,13 @@ const speakersObj = [
   },
 ];
 
-function appendChildren(parent, children) {
+const appendChildren = (parent, children) => {
   children.forEach(
     (child) => {
       parent.appendChild(child);
     },
   );
-}
+};
 
 window.onload = () => {
   const groupSpeakers = document.getElementById('speakers');
@@ -63,24 +63,24 @@ window.onload = () => {
       const firstDiv = document.createElement('div');
       firstDiv.className = 'col-sm-8 text-start';
       appendChildren(firstDiv, [name, p1, hr, p2]);
-    
+
       const secondDiv = document.createElement('div');
       secondDiv.className = 'col-sm-4';
       const img = document.createElement('img');
-      img.className = 'img-fluid speaker';
+      img.className = 'speaker';
       img.src = `../imgs/${speaker.imgName}`;
+      img.alt = `Image of ${speaker.name}`;
       secondDiv.appendChild(img);
-    
+
       const thirdDiv = document.createElement('div');
       thirdDiv.className = 'row align-items-end';
       appendChildren(thirdDiv, [secondDiv, firstDiv]);
-      
+
       const fourthDiv = document.createElement('div');
       fourthDiv.className = 'col-lg-6 mb-1';
       fourthDiv.appendChild(thirdDiv);
 
       groupSpeakers.appendChild(fourthDiv);
-      console.log(fourthDiv);
     },
   );
-}
+};

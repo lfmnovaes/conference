@@ -68,3 +68,7 @@ Original design idea by [Cindy Shin](https://www.behance.net/adagio07) in Behanc
 [cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
 [cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
 [cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
+
+Background and speakers image taken from [iJS 2021](https://javascript-conference.com/).
+
+Icons by [svgrepo.com](https://www.svgrepo.com/)

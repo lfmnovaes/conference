@@ -42,14 +42,19 @@ body {
   border: 3px solid #ec5242;
 }
 
-.page-header-ui {
+.main-page {
   position: relative;
   padding: 10vmax 0;
   background: center / cover no-repeat url("/imgs/IJS20_Global_Header_Gray.jpg");
 }
 
-.page-header-ui-title {
-  font-family: 'COCOGOOSE';
+.about-page {
+  padding: 10vmax 0;
+  background: #d3d3d3;
+}
+
+.main-page-header-title {
+  font-family: 'COCOGOOSE', sans-serif;
   font-weight: bold;
   font-size: calc(100% + 4.2vw);
   background: center / cover no-repeat url("/imgs/background@2x.jpg");
@@ -57,21 +62,34 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.page-header-ui-text {
+.about-page-header-title {
+  font-family: 'COCOGOOSE', sans-serif;
+  font-weight: bold;
+  font-size: calc(100% + 4.2vw);
+}
+
+.main-page-header-text {
   font-size: calc(100% + 0.1vw);
   line-height: calc(100% + 1.5vw);
   background-color: #f7f7f7;
   border: 3px solid #fff;
 }
 
-.page-header-ui-date {
-  font-family: 'COCOGOOSE';
-  font-size: calc(100% + 2.1vw);
+.about-page-header-text {
+  font-size: calc(100% + 0.1vw);
+  line-height: calc(100% + 1.5vw);
+  background-color: #f7f7f7;
+  border: 3px solid #fff;
+}
+
+.main-page-header-date {
+  font-family: 'COCOGOOSE', sans-serif;
+  font-size: calc(100% + 2vw);
   font-weight: bold;
 }
 
-.page-header-ui-location {
-  font-size: 20px;
+.main-page-header-location {
+  font-size: calc(100% + 1vw);
   line-height: 20px;
 }
 
@@ -116,6 +134,7 @@ body {
 
 .speaker {
   clip-path: circle(50%);
+  max-width: calc(95% + 1vw);
 }
 
 .speaker-name {
@@ -155,15 +174,29 @@ h4 {
 }
 
 .img-responsv {
-  max-width: 12vw;
+  max-width: calc(50% + 1vw);
+}
+
+.footer-bg {
+  background-color: #272a31;
 }
 
 .logo-footer {
+  max-width: 10vw;
   filter: invert(100%) grayscale(100%);
+}
+
+.logo-footer2 {
+  max-width: 10vw;
 }
 
 .text-footer {
   font-size: calc(100% + 0.5vw);
+}
+
+.border-x {
+  border-top: 1px solid #d3d3d3;
+  border-bottom: 1px solid #d3d3d3;
 }
 
 /* between 576px and 768px */
@@ -182,7 +215,11 @@ h4 {
   }
 
   .page-header-ui-date {
-    font-size: 4vw;
+    font-size: calc(100% + 4vw);
+  }
+
+  .px-5 {
+    padding: 0 4vw !important;
   }
 
   .pe-5 {
@@ -201,7 +238,11 @@ h4 {
     padding: 4vh 0;
   }
 
-  .img-responsv {
+  .speaker {
+    max-width: calc(100% + 2vw);
+  }
+
+  .logo-footer {
     max-width: 16vw;
   }
 }
@@ -215,16 +256,20 @@ h4 {
     display: none;
   }
 
+  .page-header-ui-title {
+    font-size: calc(100% + 6vw);
+  }
+
   .page-header-ui-text {
     font-size: calc(80% + 0.1vw);
   }
 
   .page-header-ui-date {
-    font-size: 11vw;
+    font-size: calc(100% + 4.5vw);
   }
 
   .px-5 {
-    padding: 0 1rem !important;
+    padding: 0 5vw !important;
   }
 
   .py-3 {
@@ -233,6 +278,14 @@ h4 {
 
   .mb-5 {
     margin-bottom: 2rem !important;
+  }
+
+  .p-5 {
+    padding: 3rem 1rem !important;
+  }
+
+  .speaker {
+    max-width: calc(60% + 1vw);
   }
 
   .emphasis {
@@ -244,6 +297,10 @@ h4 {
   }
 
   .img-responsv {
-    max-width: 30vw;
+    max-width: calc(50% + 4vw);
+  }
+
+  .logo-footer {
+    max-width: 24vw;
   }
 }
