@@ -3,16 +3,6 @@
   src: url(../fonts/COCOGOOSE.ttf);
 }
 
-/* @font-face {
-  font-family: "COCOGOOSE";
-  src: url("//db.onlinewebfonts.com/t/d14035f6b1afeabafbee4abb2ebf0fc6.eot");
-  src: url("//db.onlinewebfonts.com/t/d14035f6b1afeabafbee4abb2ebf0fc6.eot?#iefix") format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/d14035f6b1afeabafbee4abb2ebf0fc6.woff2") format("woff2"),
-    url("//db.onlinewebfonts.com/t/d14035f6b1afeabafbee4abb2ebf0fc6.woff") format("woff"),
-    url("//db.onlinewebfonts.com/t/d14035f6b1afeabafbee4abb2ebf0fc6.ttf") format("truetype"),
-    url("//db.onlinewebfonts.com/t/d14035f6b1afeabafbee4abb2ebf0fc6.svg#COCOGOOSE") format("svg");
-} */
-
 @font-face {
   font-family: 'Lato';
   src: url(../fonts/Lato-Regular.ttf);
@@ -46,6 +36,10 @@ body {
   position: relative;
   padding: 10vmax 0;
   background: center / cover no-repeat url("/imgs/IJS20_Global_Header_Gray.jpg");
+}
+
+.px-6 {
+  padding: 0 4vmax !important;
 }
 
 .about-page {
@@ -89,7 +83,7 @@ body {
 }
 
 .main-page-header-location {
-  font-size: calc(100% + 1vw);
+  font-size: calc(100% + 0.6vw);
   line-height: 20px;
 }
 
@@ -170,28 +164,36 @@ h4 {
 }
 
 .gray {
-  filter: grayscale(100%);
+  filter: grayscale(100%) contrast(25%);
 }
 
-.img-responsv {
-  max-width: calc(50% + 1vw);
+.gray2 {
+  filter: grayscale(100%) contrast(0%);
+}
+
+.logo-fluid {
+  width: calc(80% + 1vw);
 }
 
 .footer-bg {
   background-color: #272a31;
 }
 
-.logo-footer {
-  max-width: 10vw;
-  filter: invert(100%) grayscale(100%);
+.main-logo-footer {
+  max-width: calc(100% + 10vw);
 }
 
-.logo-footer2 {
+.about-logo-footer {
   max-width: 10vw;
 }
 
-.text-footer {
-  font-size: calc(100% + 0.5vw);
+.main-text-footer {
+  font-size: calc(100% + 0.2vw);
+}
+
+.logo-box {
+  border: 1px solid #414246;
+  background-color: #d3d3d3;
 }
 
 .border-x {
@@ -199,7 +201,33 @@ h4 {
   border-bottom: 1px solid #d3d3d3;
 }
 
-/* between 576px and 768px */
+.event-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 !important;
+  background-color: #ec5242;
+  background-blend-mode: multiply;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.opacity {
+  opacity: 0.5;
+}
+
+.opacity:hover {
+  opacity: 1;
+}
+
+.text-block {
+  color: white;
+  position: absolute;
+  font-size: 2rem;
+  z-index: 5;
+  text-align: center;
+}
+
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   .navbar-brand {
     padding: 0 0 0 2%;
@@ -216,10 +244,6 @@ h4 {
 
   .page-header-ui-date {
     font-size: calc(100% + 4vw);
-  }
-
-  .px-5 {
-    padding: 0 4vw !important;
   }
 
   .pe-5 {
@@ -268,10 +292,6 @@ h4 {
     font-size: calc(100% + 4.5vw);
   }
 
-  .px-5 {
-    padding: 0 5vw !important;
-  }
-
   .py-3 {
     padding: 0 !important;
   }
@@ -285,7 +305,7 @@ h4 {
   }
 
   .speaker {
-    max-width: calc(60% + 1vw);
+    max-width: calc(50% + 1vw);
   }
 
   .emphasis {
@@ -296,7 +316,7 @@ h4 {
     padding: 2vh 0;
   }
 
-  .img-responsv {
+  .logo-fluid {
     max-width: calc(50% + 4vw);
   }
 
