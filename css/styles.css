@@ -27,6 +27,14 @@ body {
   color: #ec5242 !important;
 }
 
+.main-page-btn {
+  display: none;
+  background-color: #ec5242;
+  border: none;
+  padding: 20px;
+  width: 50vw;
+}
+
 .emphasis {
   padding: 10px;
   border: 3px solid #ec5242;
@@ -34,7 +42,7 @@ body {
 
 .main-page {
   position: relative;
-  padding: 10vmax 0;
+  padding: 10vw 0;
   background: center / cover no-repeat url("/imgs/IJS20_Global_Header_Gray.jpg");
 }
 
@@ -78,18 +86,13 @@ body {
 
 .main-page-header-date {
   font-family: 'COCOGOOSE', sans-serif;
-  font-size: calc(100% + 2vw);
+  font-size: calc(100% + 1.5vw);
   font-weight: bold;
 }
 
 .main-page-header-location {
   font-size: calc(100% + 0.6vw);
   line-height: 20px;
-}
-
-.img-fluid {
-  max-width: 100%;
-  height: auto;
 }
 
 .red-line {
@@ -113,7 +116,8 @@ body {
 
 .program-icon {
   filter: invert(100%);
-  max-width: 50px;
+  min-width: 50px;
+  max-width: calc(10% + 0.1vw);
 }
 
 .program-card {
@@ -126,9 +130,16 @@ body {
   border: 2px solid white;
 }
 
+.program-card-title {
+  font-size: calc(80% + 1vw);
+}
+
+.program-card-text {
+  font-size: calc(80% + 0.3vw);
+}
+
 .speaker {
-  clip-path: circle(50%);
-  max-width: calc(95% + 1vw);
+  max-width: calc(90% + 1vw);
 }
 
 .speaker-name {
@@ -172,7 +183,7 @@ h4 {
 }
 
 .logo-fluid {
-  width: calc(80% + 1vw);
+  width: calc(80% + 2vw);
 }
 
 .footer-bg {
@@ -246,12 +257,34 @@ h4 {
     font-size: calc(100% + 4vw);
   }
 
+  .program-icon {
+    min-width: 40px;
+  }
+
+  .program-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .program-card {
+    display: flex;
+    align-items: center;
+    text-align: start;
+    min-width: 95vw;
+    gap: 10px;
+  }
+
   .pe-5 {
     padding-right: 1rem !important;
   }
 
   .ps-5 {
     padding-left: 1rem !important;
+  }
+
+  .px-6 {
+    padding: 0 2vw !important;
   }
 
   .emphasis {
@@ -262,8 +295,16 @@ h4 {
     padding: 4vh 0;
   }
 
-  .speaker {
-    max-width: calc(100% + 2vw);
+  #hide-text {
+    display: none;
+  }
+
+  .main-page-btn {
+    display: block;
+  }
+
+  .logo-fluid {
+    max-width: calc(60% + 5vw);
   }
 
   .logo-footer {
@@ -292,6 +333,29 @@ h4 {
     font-size: calc(100% + 4.5vw);
   }
 
+  .program-icon {
+    min-width: 30px;
+  }
+
+  .program-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .program-card {
+    display: flex;
+    align-items: center;
+    text-align: start;
+    min-width: 95vw;
+    gap: 10px;
+  }
+
+  .px-6 {
+    padding: 0 2vw !important;
+    margin: 0 !important;
+  }
+
   .py-3 {
     padding: 0 !important;
   }
@@ -304,8 +368,31 @@ h4 {
     padding: 3rem 1rem !important;
   }
 
+  .speaker-name {
+    font-size: calc(100% + 0.3vw);
+    font-weight: bold;
+  }
+
+  .speaker-title {
+    font-size: calc(70% + 0.1vw);
+    font-style: italic;
+    color: #ec5242;
+  }
+
+  .speaker-desc {
+    font-size: calc(70% + 0.1vw);
+  }
+
+  #hide-text {
+    display: none;
+  }
+
+  .main-page-btn {
+    display: block;
+  }
+
   .speaker {
-    max-width: calc(50% + 1vw);
+    max-width: calc(75% + 1vw);
   }
 
   .emphasis {

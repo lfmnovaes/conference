@@ -61,11 +61,11 @@ window.onload = () => {
       p2.className = 'speaker-desc';
       p2.innerText = speaker.desc;
       const firstDiv = document.createElement('div');
-      firstDiv.className = 'col-sm-8 text-start';
+      firstDiv.className = 'col-8 text-start';
       appendChildren(firstDiv, [name, p1, hr, p2]);
 
       const secondDiv = document.createElement('div');
-      secondDiv.className = 'col-sm-4';
+      secondDiv.className = 'col-4';
       const img = document.createElement('img');
       img.className = 'speaker';
       img.src = `../imgs/${speaker.imgName}`;
@@ -73,7 +73,7 @@ window.onload = () => {
       secondDiv.appendChild(img);
 
       const thirdDiv = document.createElement('div');
-      thirdDiv.className = 'row align-items-end';
+      thirdDiv.className = 'row';
       appendChildren(thirdDiv, [secondDiv, firstDiv]);
 
       const fourthDiv = document.createElement('div');
