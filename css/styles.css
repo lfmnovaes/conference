@@ -432,7 +432,7 @@ h4 {
   }
 
   .logo-fluid {
-    max-width: calc(50% + 4vw);
+    max-width: calc(50% + 3.5vw);
   }
 
   .main-logo-footer {
