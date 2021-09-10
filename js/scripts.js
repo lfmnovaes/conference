@@ -68,7 +68,7 @@ window.onload = () => {
       secondDiv.className = 'col-4';
       const img = document.createElement('img');
       img.className = 'speaker';
-      img.src = `../imgs/${speaker.imgName}`;
+      img.src = `imgs/${speaker.imgName}`;
       img.alt = `Image of ${speaker.name}`;
       secondDiv.appendChild(img);
 

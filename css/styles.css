@@ -23,6 +23,10 @@ body {
   align-self: center;
 }
 
+.navbar-pad {
+  padding: 0 14vmax;
+}
+
 .orange {
   color: #ec5242 !important;
 }
@@ -43,11 +47,11 @@ body {
 .main-page {
   position: relative;
   padding: 10vw 0;
-  background: center / cover no-repeat url("/imgs/IJS20_Global_Header_Gray.jpg");
+  background: center / cover no-repeat url("../imgs/IJS20_Global_Header_Gray.jpg");
 }
 
 .px-6 {
-  padding: 0 4vmax !important;
+  padding: 0 3vmax !important;
 }
 
 .about-page {
@@ -59,7 +63,7 @@ body {
   font-family: 'COCOGOOSE', sans-serif;
   font-weight: bold;
   font-size: calc(100% + 4.2vw);
-  background: center / cover no-repeat url("/imgs/background@2x.jpg");
+  background: center / cover no-repeat url("../imgs/background_text.jpg");
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -195,7 +199,7 @@ h4 {
 }
 
 .about-logo-footer {
-  max-width: 10vw;
+  max-width: calc(10% + 0.5vw);
 }
 
 .main-text-footer {
@@ -223,20 +227,24 @@ h4 {
   background-repeat: no-repeat;
 }
 
-.opacity {
-  opacity: 0.5;
-}
-
-.opacity:hover {
-  opacity: 1;
-}
-
 .text-block {
   color: white;
   position: absolute;
   font-size: 2rem;
   z-index: 5;
   text-align: center;
+}
+
+.opacity {
+  opacity: 0.5;
+}
+
+.event-photo:hover .text-block {
+  display: none;
+}
+
+.event-photo:hover .opacity {
+  opacity: 1;
 }
 
 @media only screen and (min-width: 576px) and (max-width: 768px) {
@@ -247,6 +255,14 @@ h4 {
 
   .nav-item {
     margin: inherit;
+  }
+
+  .navbar-pad {
+    padding: 0 2vmax;
+  }
+
+  .main-page-header-title {
+    font-size: calc(100% + 6.5vw);
   }
 
   .page-header-ui-title {
@@ -307,8 +323,12 @@ h4 {
     max-width: calc(60% + 5vw);
   }
 
-  .logo-footer {
-    max-width: 16vw;
+  .main-logo-footer {
+    max-width: calc(80% + 10vw);
+  }
+
+  .about-logo-footer {
+    max-width: calc(15% + 2vw);
   }
 }
 
@@ -319,6 +339,14 @@ h4 {
 
   .navbar-brand {
     display: none;
+  }
+
+  .navbar-pad {
+    padding: 0 0 0 2vmax;
+  }
+
+  .main-page-header-title {
+    font-size: calc(100% + 6vw);
   }
 
   .page-header-ui-title {
@@ -407,7 +435,11 @@ h4 {
     max-width: calc(50% + 4vw);
   }
 
-  .logo-footer {
-    max-width: 24vw;
+  .main-logo-footer {
+    max-width: calc(80% + 8vw);
+  }
+
+  .about-logo-footer {
+    max-width: calc(20% + 4vw);
   }
 }
